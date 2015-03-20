@@ -14,7 +14,8 @@
     "hubot",
     "points",
     "plus",
-    "karma"
+    "karma",
+    "userverify"
   ],
   "author": "Kyle Andrews <https://github.com/kwandrews7>",
   "license": "MIT",

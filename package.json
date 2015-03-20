@@ -1,14 +1,14 @@
 {
-  "name": "hubot-plusplus",
-  "version": "1.1.5",
-  "description": "A hubot script for adding or removing points",
+  "name": "hubot-plusplus-userverify",
+  "version": "1.0.0",
+  "description": "A hubot script for adding or removing points, with tweaked user validation.",
   "main": "index.coffee",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script --recursive ./test"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/ajacksified/hubot-plusplus.git"
+    "url": "https://github.com/kwandrews7/hubot-plusplus-userverify.git"
   },
   "keywords": [
     "hubot",
@@ -16,10 +16,10 @@
     "plus",
     "karma"
   ],
-  "author": "Jack Lawson <https://github.com/ajacksified>",
+  "author": "Kyle Andrews <https://github.com/kwandrews7>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ajacksified/hubot-plusplus/issues"
+    "url": "https://github.com/kwandrews7/hubot-plusplus-userverify/issues"
   },
   "dependencies": {
     "coffee-script": "~1.6",

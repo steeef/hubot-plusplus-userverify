@@ -1,15 +1,30 @@
-hubot-plusplus
+hubot-plusplus-userverify
 ==============
 
 Give (or take away) points from people and things, all from the comfort of your
-personal Hubot.
+personal Hubot. This is a simple fork off of the popular hubot-plusplus hubot-script.
+The changes made, although somewhat hacky, are in place to attempt to clean up
+goofy scorings while running the script in Slack with a team. Changes are noted
+below.
 
-Note: don't make changes here; make changes to [the official repository](https://github.com/hubot-scripts/hubot-plusplus) instead.
+User Validation Works like so, the bot will take the last word of a multi word 
+message and check to see if it matches a username or is the prefix of a username.
+If so, it will give the score to that username and drop the first part of the
+message. 
+
+For instance, the message `other words go here USERNAME++`, would give USERNAME
+an extra point. However, the message `other words++` would give `other words` an
+extra point unless a user is in the room that has `words` as part of their username.
+
+All other commands work as designed in hubot-plusplus.
+
+Official Hubot-plusplus repo is located here: https://github.com/hubot-scripts/hubot-plusplus
 
 API
 ---
 
 * `thing++` - add a point to `thing`
+* `(misc message text) thing++` - add a point to `thing`
 * `++` - add a point to the most previously voted-on thing
 * `thing++ for stuff` - keep track of why you gave thing points
 * `thing--` - remove a point from `thing`
@@ -36,13 +51,13 @@ robot.emit "plus-one", {
 
 Run the following command 
 
-    $ npm install hubot-plusplus
+    $ npm install hubot-plusplus-userverify
 
 Then to make sure the dependencies are installed:
 
     $ npm install
 
-To enable the script, add a `hubot-plusplus` entry to the `external-scripts.json`
+To enable the script, add a `hubot-plusplus-userverify` entry to the `external-scripts.json`
 file (you may need to create this file).
 
-    ["hubot-plusplus"]
+    ["hubot-plusplus-userverify"]

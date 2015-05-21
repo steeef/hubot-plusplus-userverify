@@ -8,16 +8,16 @@
 # Configuration:
 #
 # Commands:
-#   <name>++
-#   <name>--
-#   hubot score <name> [for <reason>]
-#   hubot top <amount>
-#   hubot bottom <amount>
-#   hubot erase <user> [<reason>]
-#   GET http://<url>/hubot/scores[?name=<name>][&direction=<top|botton>][&limit=<10>]
+#   <name>++ - add 1 point to <name>'s points (can be anywhere in a message)
+#   <name>-- - remove 1 point from <name>'s points (can be anywhere in a message)
+#   hubot score <name> [for <reason>] - show points for <name>
+#   hubot top <amount> - show <amount> people with the highest points
+#   hubot bottom <amount> - show <amount> people with the lowest points
+#   hubot erase <name> [<reason>] - remove points from <name>
 #
 # Author:
 #   ajacksified
+#   steeef
 
 
 _ = require('underscore')
